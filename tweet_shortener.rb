@@ -52,5 +52,7 @@ def selective_tweet_shortener(tweet_array)
     tweet_array.each do |tweet|
       puts word_substituter(tweet)
     end
+  else
+    tweet_array
   end
-end 
+end
