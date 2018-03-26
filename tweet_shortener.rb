@@ -47,13 +47,12 @@ def bulk_tweet_shortener(tweet_array)
   end
 end
 
-def selective_tweet_shortener(tweet_array)
-  if tweet_array.length > 140
-    tweet_array.collect do |tweet|
-      word_substituter(tweet)
+def selective_tweet_shortener(tweet)
+  if tweet.length > 140
+    word_substituter(tweet)
     end
   else
-    tweet_array
+    tweet
   end
 end
 
@@ -66,7 +65,7 @@ end
 #     if x.length > 140
 #       x[0..139].gsub(/\s\w+\s*$/, '...')
 #     end
-# end 
+# end
 
       # x[137] = "."
       # x[138] = "."
