@@ -56,3 +56,9 @@ def selective_tweet_shortener(tweet_array)
     tweet_array
   end
 end
+
+def shortened_tweet_truncator(tweet_array)
+    if tweet_array.length > 140
+    x = tweet_array.each do |tweet|
+        word_substituter(tweet)
+        end
