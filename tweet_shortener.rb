@@ -62,9 +62,11 @@ def shortened_tweet_truncator(tweet_array)
     x = tweet_array.each do |tweet|
         word_substituter(tweet)
         end
+    end
     if x.length > 140
       x[0..139].gsub(/\s\w+\s*$/, '...')
-
+    end
+end 
 
       # x[137] = "."
       # x[138] = "."
