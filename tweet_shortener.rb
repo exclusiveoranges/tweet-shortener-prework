@@ -28,21 +28,21 @@ def word_substituter(tweet_string)
   end.join(" ")
 end
 
-def bulk_tweet_shortener(tweet_array)
-  y = tweet_array.join
-  z = y.split
-  x = z.collect do |string|
-    if dictionary.include?(string.downcase)
-        dictionary[string.downcase]
-    else
-        string
-    end
-  end
-  puts x.join(" ")
-end
+# def bulk_tweet_shortener(tweet_array)
+#   y = tweet_array.join
+#   z = y.split
+#   x = z.collect do |string|
+#     if dictionary.include?(string.downcase)
+#         dictionary[string.downcase]
+#     else
+#         string
+#     end
+#   end
+#   puts x.join(" ")
+# end
 
 def bulk_tweet_shortener(tweet_array)
   tweet_array.each do |tweet|
     puts word_substituter(tweet)
   end
-end     
+end
