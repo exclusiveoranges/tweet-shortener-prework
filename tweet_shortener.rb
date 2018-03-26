@@ -63,6 +63,9 @@ def shortened_tweet_truncator(tweet_array)
         word_substituter(tweet)
         end
     if x.length > 140
-      x[137] = "."
-      x[138] = "."
-      x[139] = "."
+      x[0..139].gsub(/\s\w+\s*$/, '...')
+
+
+      # x[137] = "."
+      # x[138] = "."
+      # x[139] = "."
