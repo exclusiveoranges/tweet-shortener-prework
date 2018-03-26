@@ -38,6 +38,5 @@ def bulk_tweet_shortener(tweet_array)
         string
     end
   end
-  binding.pry
   puts x.join(" ")
 end
